@@ -69,19 +69,16 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 <div id="content" class="w3-container">
 
 	<!--Add function name for the canvas-->
-	<canvas id="a" width="300" height="225"></canvas>
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid black;">
 
-	<!--This code adds a canvas square to my website-->
-		<canvas width="300" height="225"></canvas>
-
-		<!--Canvas is being displayed here-->
- 	
- 	function draw_b() {
-   	var b_canvas = document.getElementById("b");
-   	var b_context = b_canvas.getContext("2d");
-   	b_context.fillRect(50, 25, 150, 100);
- 	}
-
+	</canvas>
+ 
+ 	<script>
+ 	const canvas = document.getElementById("myCanvas");
+ 	<!-- Find the canvas-->
+ 	const ctx = canvas.getContext("2d");
+ 	<!--Gives tools necessary for drawing-->
+ 	ctx.fillRect(0,0,150,75);
 	
 	<p>Content goes here.</p>
 		
