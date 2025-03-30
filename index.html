@@ -19,7 +19,7 @@ triedel@utexas.edu
 Brief Description of Goal of Code:
 To develop skills in using <canvas> elements, which can be further applied into making diagnostic apps
 	
-Known Issues:
+Known Issues: Process went smoothly, no known issues so far.
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -41,6 +41,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 
 <style>	
+	<!--This code determines the margins of the pages to make everything look nice-->
 .body {
      margin: 0em;
 }
@@ -58,7 +59,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     left: 0vw;
     z-index: 1;
 }
-	<!--Added this code to format the canvas, buttons, and other components.-->
+	<!--Added this code as a way for formatting the canvas, buttons, and other components.-->
 	   canvas {
  	border: 2px solid black;
  	display: block;
@@ -111,7 +112,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
              ctx.fillStyle = "red";
              ctx.fillText("Athitiya Singhapan!", 100, 150);
          }
-         
+         <!--Add image of me-->
          function drawImage() {
              var img = new Image();
              img.src = "https://1000dreamsfund.org/wp-content/uploads/2025/01/Athitiya-Singhapan-e1738260574555-600x600.jpg"; 
@@ -119,7 +120,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
                  ctx.drawImage(img, 75, 75, 150, 150);
              }
          }
-         
+         <!--Function for clearing canvas-->
          function clearCanvas() {
              ctx.clearRect(0, 0, canvas.width, canvas.height);
 
